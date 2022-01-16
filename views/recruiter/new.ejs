@@ -1,0 +1,59 @@
+<% layout('layouts/boilerplate') %>
+    <div>
+        <h1>Add Job</h1>
+        <form action="/recruiter" method="POST">
+            <label for="jobtitle">Job Title</label><br>
+            <input type="text" id="jobtitle" name="jobtitle"><br>
+
+            <label for="jobdesc">Job Description</label><br>
+            <input type="text" id="jobdesc" name="jobdesc"><br>
+
+            <label for="dept">Department</label><br>
+            <input type="text" id="dept" name="dept"><br>
+            <h4>Skill Set</h4>
+            <label for="skillset1">Skill Set 1: </label>
+            <input type="text" id="skillset1" name="skillset1">
+            <label for="exponskillset1">Experience: </label>
+            <input type="text" id="exponskillset1" name="exponskillset1"><br>
+
+            <label for="skillset2">Skill Set 2: </label>
+            <input type="text" id="skillset2" name="skillset2">
+            <label for="exponskillset2">Experience: </label>
+            <input type="text" id="exponskillset2" name="exponskillset2"><br>
+
+            <label for="skillset3">Skill Set 3: </label>
+            <input type="text" id="skillset3" name="skillset3">
+            <label for="exponskillset3">Experience: </label>
+            <input type="text" id="exponskillset3" name="exponskillset3"><br>
+
+            <label for="skillset4">Skill Set 4: </label>
+            <input type="text" id="skillset4" name="skillset4">
+            <label for="exponskillset4">Experience: </label>
+            <input type="text" id="exponskillset4" name="exponskillset4"><br>
+
+            <label for="skillset5">Skill Set 5: </label>
+            <input type="text" id="skillset5" name="skillset5">
+            <label for="exponskillset5">Experience: </label>
+            <input type="text" id="exponskillset5" name="exponskillset5"><br>
+
+            <br>
+            <br>
+            <h4>Must have Skill Set: </h4>
+            <label for="Musthaveskillset1">1: </label>
+            <input type="text" id="Musthaveskillset1" name="Musthaveskillset1"><br>
+
+            <label for="Musthaveskillset2">2: </label>
+            <input type="text" id="Musthaveskillset2" name="Musthaveskillset2"><br>
+
+            <label for="expiry">Expiry</label><br>
+            <input type="date" id="expiry" name="expiry"><br>
+
+            <label for="status">Status</label><br>
+            <select name="status" id="status">
+                <option value="open">Open</option>
+                <option value="close">Close</option>
+            </select> <br><br>
+
+            <button>Create job</button>
+        </form>
+    </div>

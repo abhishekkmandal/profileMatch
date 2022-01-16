@@ -1,0 +1,169 @@
+<% layout('layouts/boilerplate') %>
+    <h1>Created Job</h1>
+    <br>
+    <ul>
+        <div class="card" mb-3>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 style="display: inline;">Job title: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.jobtitle%>
+                        </h5>
+                        <br>
+                        <h4 style="display: inline;">Job Description: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.jobdesc%>
+                        </h5>
+                        <br>
+                        <h4 style="display: inline;">Job Department: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.dept%>
+                        </h5>
+                        <br>
+                        <h4>Skillset: </h4>
+                        <h4 style="display: inline;">1: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.skillset1%>
+                        </h5>
+                        <h5 class="card-title" style="display: inline;">
+                            , <%=job.exponskillset1%> Years.
+                        </h5>
+                        <br>
+
+                        <h4 style="display: inline;">2: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.skillset2%>
+                        </h5>
+                        <h5 class="card-title" style="display: inline;">
+                            , <%=job.exponskillset2%> Years.
+                        </h5>
+                        <br>
+
+                        <h4 style="display: inline;">3: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.skillset3%>
+                        </h5>
+                        <h5 class="card-title" style="display: inline;">
+                            , <%=job.exponskillset3%> Years.
+                        </h5>
+                        <br>
+
+                        <h4 style="display: inline;">4: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.skillset4%>
+                        </h5>
+                        <h5 class="card-title" style="display: inline;">
+                            , <%=job.exponskillset4%> Years.
+                        </h5>
+                        <br>
+
+                        <h4 style="display: inline;">5: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.skillset5%>
+                        </h5>
+                        <h5 class="card-title" style="display: inline;">
+                            , <%=job.exponskillset5%> Years.
+                        </h5>
+                        <br>
+                        <h4>Must Have Skills: </h4>
+                        <h4 style="display: inline;">1: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.Musthaveskillset1%>
+                        </h5>
+                        <br>
+                        <h4 style="display: inline;">2: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.Musthaveskillset2%>
+                        </h5>
+                        <br>
+                        <h4 style="display: inline;">Expiry: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.expiry%>
+                        </h5>
+                        <br>
+                        <h4 style="display: inline;">Job Status: </h4>
+                        <h5 class="card-title" style="display: inline;">
+                            <%=job.status%>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ul>
+    <h1>Showing Matched Job Post</h1>
+    <br>
+    <ul>
+        <% for(let match of matched){%>
+            <div class="card" mb-3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 style="display: inline;">Resume drive link: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.resume%>
+                            </h5>
+                            <br>
+                            <br>
+
+                            <h4 style="display: inline;">Skill Set1: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.skillset1%>
+                            </h5>
+                            <br>
+                            <h4 style="display: inline;">Skill Experience 1: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.exp1%>
+                            </h5>
+                            <br>
+                            <br>
+                            <h4 style="display: inline;">Skill Set2: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.skillset2%>
+                            </h5>
+                            <br>
+                            <h4 style="display: inline;">Skill Experience 2: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.exp2%>
+                            </h5>
+                            <br>
+                            <br>
+                            <h4 style="display: inline;">Skill Set3: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.skillset3%>
+                            </h5>
+                            <br>
+                            <h4 style="display: inline;">Skill Experience 3: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.exp3%>
+                            </h5>
+                            <br>
+                            <br>
+                            <h4 style="display: inline;">Skill Set4: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.skillset4%>
+                            </h5>
+                            <br>
+                            <h4 style="display: inline;">Skill Experience 4: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.exp4%>
+                            </h5>
+                            <br>
+                            <br>
+                            <h4 style="display: inline;">Skill Set5: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.skillset5%>
+                            </h5>
+                            <br>
+                            <h4 style="display: inline;">Skill Experience 5: </h4>
+                            <h5 class="card-title" style="display: inline;">
+                                <%=match.exp5%>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% }%>
+    </ul>
